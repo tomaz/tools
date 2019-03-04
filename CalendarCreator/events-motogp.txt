@@ -1,0 +1,95 @@
+20190310
+1620-1920
+MotoGP -R1- Grand Prix of Qatar
+Losail International Circuit Rd\, Qatar
+
+20190331
+1820-2120
+MotoGP -R2- Gran Premio Motul de la Republica Argentina
+Autódromo Termas de Río Hondo\, Argentina
+
+20190414
+1920-2220
+MotoGP -R3- Red Bull Grand Prix of the Americas
+Circuit of the Americas\, Austin\, Texas\, USA
+
+20190505
+1220-1520
+MotoGP -R4- Gran Premio de Espana
+Circuito Jerez\, Jerez de la Frontera\, Spain
+
+20190519
+1220-1520
+MotoGP -R5- HJC Helmets Grand Prix de France
+Le Mans Bugatti Circuit\, Le Mans\, France
+
+20190602
+1220-1520
+MotoGP -R6- Gran Premio d'Italia
+Autodromo del Mugello\, Senni-San Carlo\, 15\, 50038 Scarperia e San Piero FI\, Italy
+
+20190616
+1220-1520
+MotoGP -R7- Gran Premi Monster Energy de Catalunya
+Circuit de Catalunya\, Montmelo\, Catalunya\, Spain
+
+20190630
+1220-1520
+MotoGP -R8- Motul TT Assen
+TT Circuit Assen\, De Haar 9\, 9405 TE Assen\, Netherlands
+
+20190707
+1220-1520
+MotoGP -R9- GoPro Motorrad Grand Prix Deutschland
+Sachsenring\, Oberlungwitz\, Germany
+
+20190804
+1220-1520
+MotoGP -R10- Monster Energy Grand Prix České republiky (Czech Republic)
+Automotodrom Brno\, Ríšova 43\, 664 81 Ostrovačice\, Czech Republic
+
+20190811
+1220-1520
+MotoGP -R11- NeroGiardini Motorrad Grand Prix von Österreich
+Red Bull Ring Str. 1\, 8724 Spielberg\, Austria
+
+20190825
+1400-1700
+MotoGP -R12- Octo British Grand Prix
+Silverstone Circuit\, Towcester\, Northamptonshire NN12 8TN\, United Kingdom
+
+20190915
+1220-1520
+MotoGP -R13- Gran Premio di San Marino e della Riviera di Rimini
+Misano World Circuit "Marco Simoncelli"\, via Daijiro Kato\, 10\, Misano Adriatico RN\, Italy
+
+20190922
+1220-1520
+MotoGP -R14- Gran Premio Movistar de Aragon
+Motorland Aragón\, Ctra TE-V 7033\, Km. 1\, 44600 Alcañiz\, Teruel\, Teruel\, Spain
+
+20191006
+0720-1020
+MotoGP -R15- PTT Thailand Grand Prix
+Tambon Ban Bua\, Amphoe Mueang Buri Ram\, Chang Wat Buri Ram 31000\, Thailand
+
+20191020
+0520-0820
+MotoGP -R16- Motul Grand Prix of Japan
+Twin Ring Motegi\, 120-1 Hiyama Motegi\, Haga-Gun\, Tochigi 321-3533\, Japan
+
+20191027
+0320-0620
+MotoGP -R17- Australian Motorcycle Grand Prix
+Phillip Island Grand Prix Circuit\, Back Beach Road\, Phillip Island VIC 3922\, Australia
+
+20191103
+0620-0920
+MotoGP -R18- Shell Malaysia Motorcycle Grand Prix
+Sepang Circuit\, 13AF\, Stesen Sentral Kuala Lumpur\, 50470\, Kuala Lumpur\, Wilayah Persekutuan\, 50470\, Malaysia
+
+20191117
+1220-1520
+MotoGP -R19- Gran Premio Motul de la Communitat Valenciana
+Circuit Communitat Valenciana\, Valencia\, Spain
+

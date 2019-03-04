@@ -1,0 +1,104 @@
+20190317
+0610-0810
+F1 -R1- Australian Grand Prix
+Albert Park\, Melbourne\, Victoria\, Australia
+
+20190331
+1710-1910
+F1 -R2- Bahrain Grand Prix
+Bahrain International Circuit\, Sakhir\, Bahrain
+
+20190414
+0810-1010
+F1 -R3- Chinese Grand Prix
+Shanghai International Circuit\, Shanghai\, China
+
+20190428
+1410-1610
+F1 -R4- Azerbaijan Grand Prix
+Baku\, Azerbaijan
+
+20190512
+1510-1710
+F1 -R5- Gran Premio de Espana
+Barcelona-Catalunya Circuit\, Camino Mas Moreneta\, 08160 Montmeló\, Barcelona\, Spain
+
+20190526
+1510-1710
+F1 -R6- Grand Prix de Monaco
+Monte Carlo\, Monaco
+
+20190609
+2010-2210
+F1 -R7- Grand Prix du Canada
+Circuit Gilles Villeneuve\, Ille Notre-Dame\, Montreal\, Quebec\, Canada
+
+20190623
+1510-1710
+F1 -R8- Grand Prix de France
+Circuit Automobile Paul Ricard\, Le Castellet\, France
+
+20190630
+1510-1710
+F1 -R9- Grosser Preis von Oesterreich
+Red Bull Ring\, Spielberg\, Austria
+
+20190714
+1510-1710
+F1 -R10- British Grand Prix
+Silverstone Circuit\, Towcester\, Northamptonshire NN12 8TN\, United Kingdom
+
+20190728
+1510-1710
+F1 -R11- Grosser Preis von Deutschland
+Am Motodrom\, Hockenheim\, Germany
+
+20190804
+1510-1710
+F1 -R12- Magyar Nagydij (Hungarian Grand Prix)
+Hungaroring\, Budapest\, Hungary
+
+20190901
+1510-1710
+F1 -R13- Belgian Grand Prix
+Spa-Francorchamps\, Francorchamps\, Belgium
+
+20190908
+1510-1710
+F1 -R14- Gran Premio d'Italia
+Autodromo Monza\, Milan\, Italy
+
+20190916
+1410-1610
+F1 -R15- Singapore Grand Prix
+Marina Bay\, Singapore
+
+20190922
+1410-1610
+F1 -R16- Russian Grand Prix
+Sochi International Street Circuit\, Olympic Park\, Sochi\, Russia
+
+20191013
+0710-0910
+F1 -R17- Japanese Grand Prix
+Suzuka Circuit\, Mie Prefecture\, Japan
+
+20191027
+2010-2210
+F1 -R19- Gran Premio de Mexico
+Autodromo Hermanos Rodriguez\, Av. Viaducto Rio de la Piedad S/N\, Iztacalco\, Granjas México\, 08400 Ciudad de México\, D.F.\, Mexico
+
+20191103
+2010-2210
+F1 -R18- United States Grand Prix
+Circuit of the Americas\, Austin\, Texas\, USA
+
+20191117
+1810-2010
+F1 -R20- Grande Premio do Brasil
+Autodromo Carlos Pace\, Interlagos\, Sao Paulo\, Brazil
+
+20191201
+1410-1610
+F1 -R21- Abu Dhabi Grand Prix
+Yas Marina Circuit\, Abu Dhabi\, United Arab Emirates
