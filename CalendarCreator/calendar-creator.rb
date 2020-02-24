@@ -1,4 +1,9 @@
+# gem install chronic
+# gem install tzinfo
+# gem install tzinfo-data
+
 require 'date'
+require 'chronic'
 require 'securerandom'
 
 ####################################################
@@ -7,23 +12,30 @@ require 'securerandom'
 
 class Event
     def initialize(data)
+        # Convert date from `20200510` to `2020-05-10` format
+        date = data[0]
+        formatted_date = "#{date[0..3]}-#{date[4..5]}-#{date[6..7]}"
+
+        # get both times, from & to
         times = data[1].split('-')
-        @from = DateTime.strptime("#{data[0]} #{times.first}", "%Y%m%d %H%M")
-        @to = DateTime.strptime("#{data[0]} #{times.last}", "%Y%m%d %H%M")
+
+        @from = Chronic.parse("#{formatted_date} #{times.first}")
+        @to = Chronic.parse("#{formatted_date} #{times.last}")
+        puts "#{@from}"
         @title = data[2]
         @location = data[3]
     end
 
     def now
-        "#{DateTime.now.strftime('%FT%T')}Z"
+        "#{DateTime.now.strftime('%FT%T')}"
     end
 
     def from_time
-        "#{@from.strftime('%FT%T')}Z"
+        "#{@from.strftime('%FT%T')}"
     end
 
     def to_time
-        "#{@to.strftime('%FT%T')}Z"
+        "#{@to.strftime('%FT%T')}"
     end
 
     def title
@@ -109,35 +121,35 @@ end
 puts "Generating"
 
 output = StringIO.new
-output << "BEGIN:VCALENDAR\r\n"
-output << "PRODID:-//Tomaz Kragelj//Calendar//EN\r\n"
-output << "VERSION:2.0\r\n"
-output << "CALSCALE:GREGORIAN\r\n"
-output << "METHOD:PUBLISH\r\n"
-output << "X-WR-CALNAME:\(arguments.calendarName)\r\n"
-output << "X-WR-TIMEZONE:UTC\r\n"
-output << "X-WR-CALDESC:\r\n"
+output << "BEGIN:VCALENDAR\n"
+output << "PRODID:-//Tomaz Kragelj//Calendar//EN\n"
+output << "VERSION:2.0\n"
+output << "CALSCALE:GREGORIAN\n"
+output << "METHOD:PUBLISH\n"
+output << "X-WR-CALNAME:\(arguments.calendarName)\n"
+output << "X-WR-TIMEZONE:UTC\n"
+output << "X-WR-CALDESC:\n"
 
 events.each do |event|
     uuid = SecureRandom.uuid.gsub('-','')
     puts "- #{event.description}"
-    output << "BEGIN:VEVENT\r\n"
-    output << "DTSTART:#{event.from_time}\r\n"
-    output << "DTEND:#{event.to_time}\r\n"
-    output << "DTSTAMP:#{event.from_time}\r\n"
-    output << "UID:#{uuid}@gentlebytes.com\r\n"
-    output << "CREATED:#{event.now}\r\n"
-    output << "DESCRIPTION:\r\n"
-    output << "LAST-MODIFIED:#{event.now}\r\n"
-    output << "LOCATION:#{event.location}\r\n"
-    output << "SEQUENCE:0\r\n"
-    output << "STATUS:CONFIRMED\r\n"
-    output << "SUMMARY:#{event.title}\r\n"
-    output << "TRANSP:TRANSPARENT\r\n"
-    output << "END:VEVENT\r\n"
+    output << "BEGIN:VEVENT\n"
+    output << "DTSTART:#{event.from_time}\n"
+    output << "DTEND:#{event.to_time}\n"
+    output << "DTSTAMP:#{event.from_time}\n"
+    output << "UID:#{uuid}@gentlebytes.com\n"
+    output << "CREATED:#{event.now}\n"
+    output << "DESCRIPTION:\n"
+    output << "LAST-MODIFIED:#{event.now}\n"
+    output << "LOCATION:#{event.location}\n"
+    output << "SEQUENCE:0\n"
+    output << "STATUS:CONFIRMED\n"
+    output << "SUMMARY:#{event.title}\n"
+    output << "TRANSP:TRANSPARENT\n"
+    output << "END:VEVENT\n"
 end
 
-output << "END:VCALENDAR\r\n"
+output << "END:VCALENDAR\n"
 File.write(arg_dest_file, output.string)
 
 exit(0)
