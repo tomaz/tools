@@ -56,7 +56,6 @@ std::string trimTrailingZeros(std::string input)
     	if(input.find(".") != std::string::npos)
     	{
     		std::string result = "";
-    		std::size_t i;
     		std::string inp(input.rbegin(),input.rend());
     		result = inp.erase(0,std::min(inp.find_first_not_of('0'),inp.size()-1));
     		if(result.at(0) == '.')

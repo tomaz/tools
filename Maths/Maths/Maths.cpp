@@ -1,23 +1,14 @@
 ﻿// Maths.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include "Console.h"
-#include "ScreenMenu.h"
+#include <iostream>
 
-using namespace std;
+#include "MenuView.h"
 
 int main() {
-	Console console;
-
-	ScreenMenu(console).run();
-
-	//for (int i=0; i<255; i++) {
-	//	cout << i << " " << console.attr("Hi there!").color(i) << endl;
-	//}
-
+	Menu::MenuView().run();
 	return 0;
 }
-
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
