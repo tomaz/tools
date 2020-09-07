@@ -84,6 +84,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)Lib\PDCurses;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -104,6 +105,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)Lib\PDCurses;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -126,6 +128,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)Lib\PDCurses;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -150,6 +153,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)Lib\PDCurses;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -164,6 +168,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BigDecimal.cpp" />
+    <ClCompile Include="HangmanInitState.cpp" />
+    <ClCompile Include="HangmanState.cpp" />
+    <ClCompile Include="HangmanView.cpp" />
     <ClCompile Include="Maths.cpp" />
     <ClCompile Include="MenuView.cpp" />
     <ClCompile Include="Screen.cpp" />
@@ -174,6 +181,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BigDecimal.h" />
+    <ClInclude Include="HangmanInitState.h" />
+    <ClInclude Include="HangmanState.h" />
+    <ClInclude Include="HangmanView.h" />
     <ClInclude Include="MenuView.h" />
     <ClInclude Include="Screen.h" />
     <ClInclude Include="UnitView.h" />

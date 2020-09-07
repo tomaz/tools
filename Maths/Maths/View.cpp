@@ -14,16 +14,11 @@ View::~View() {
 
 #pragma region Public
 
-void View::onInit() {
-	// Nothing to do here by default.
-}
-
 void View::run() {
-	onInit();
-
 	_screen.start();
 
-	drawView();
+	onInit(_screen);
+	redraw();
 
 	while (onHandle()) {}
 
@@ -34,8 +29,22 @@ void View::run() {
 
 #pragma region Subclass
 
+void View::onInit(const Screen &screen) {
+	// Nothing to do here by default.
+}
+
 bool View::onHandle() {
 	return false;
+}
+
+#pragma endregion
+
+#pragma region Helpers
+
+void View::redraw() {
+	clear();
+
+	onDraw(_screen);
 }
 
 void View::draw(std::function<void(const Screen &)> handler) {
@@ -55,17 +64,7 @@ void View::switchView(std::function<void(void)> handler) {
 
 	_screen.start();
 
-	drawView();
-}
-
-#pragma endregion
-
-#pragma region Helpers
-
-void View::drawView() {
-	clear();
-
-	onDraw(_screen);
+	redraw();
 }
 
 #pragma endregion

@@ -16,13 +16,11 @@ public:
 
 protected:
 	/// Called only once from `run`.
-	///
-	/// Note: this is called before screen is initialized.
-	virtual void onInit();
+	virtual void onInit(const Screen &screen);
 
 	/// Instructs subclass to draw the view.
 	///
-	/// This function should render the screen and exit. It's immediately followed by a call to `onInput` which is where user input should be managed.
+	/// This function should render the screen and exit. It's immediately followed by a call to `onHandle` which is where user input should be managed.
 	virtual void onDraw(const Screen &screen) = 0;
 
 	/// Handles user input.
@@ -31,6 +29,10 @@ protected:
 	///
 	/// Default implementation simply returns false to exit render loop.
 	virtual bool onHandle();
+
+protected:
+	/// Clears the view and calls `onDraw` again.
+	void redraw();
 
 	/// Ad hoc drawing function.
 	///
@@ -44,9 +46,6 @@ protected:
 	///
 	/// Create an instance and call `View::run` on it inside the given handler.
 	void switchView(std::function<void(void)> handler);
-
-private:
-	void drawView();
 
 private:
 	Screen _screen;

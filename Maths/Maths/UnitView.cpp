@@ -19,7 +19,7 @@ namespace UnitConversion {
 
 #pragma region Overrides
 
-	void UnitView::onDraw(const Screen &screen) {
+	void UnitView::onInit(const Screen &screen) {
 		init_color(COLOR_MAGENTA, 700, 700, 700);
 
 		screen.registerColors(TITLE_COLOR, COLOR_YELLOW, COLOR_BLACK);
@@ -28,7 +28,9 @@ namespace UnitConversion {
 		screen.registerColors(CORRECT_RESULT_COLOR, COLOR_GREEN, COLOR_BLACK);
 		screen.registerColors(WRONG_RESULT_COLOR, COLOR_RED, COLOR_BLACK);
 		screen.registerColors(STATISTICS_COLOR, COLOR_MAGENTA, COLOR_BLACK);
+	}
 
+	void UnitView::onDraw(const Screen &screen) {
 		screen.draw([this](const Screen &screen) {
 			screen.attributed(A_REVERSE | COLOR_PAIR(TITLE_COLOR), [](const Screen &screen) {
 				mvprintstdc(2, " P R E T V O R B A   E N O T ");

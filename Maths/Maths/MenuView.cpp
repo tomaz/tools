@@ -1,4 +1,5 @@
 ﻿#include "UnitView.h"
+#include "HangmanView.h"
 
 #include "MenuView.h"
 
@@ -22,7 +23,8 @@ namespace Menu {
 			});
 
 			drawOption(screen, 10, "A", "Pretvorba enot");
-			drawOption(screen, 12, "X", "Izhod");
+			drawOption(screen, 12, "S", "Nekaj za sprostitev");
+			drawOption(screen, 14, "X", "Izhod");
 		});
 	}
 
@@ -30,6 +32,10 @@ namespace Menu {
 		switch (getch()) {
 			case 'a': case 'A':
 				switchView([]() { UnitConversion::UnitView().run(); });
+				break;
+
+			case 's': case 'S':
+				switchView([]() { Hangman::HangmanView().run();  });
 				break;
 
 			case 'x': case 'X':

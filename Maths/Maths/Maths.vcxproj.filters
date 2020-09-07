@@ -39,6 +39,15 @@
     <ClCompile Include="UnitViewSession.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HangmanView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HangmanState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HangmanInitState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Screen.h">
@@ -60,6 +69,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="UnitViewSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HangmanView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HangmanState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HangmanInitState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

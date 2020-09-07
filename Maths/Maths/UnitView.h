@@ -30,6 +30,7 @@ namespace UnitConversion {
 		using View::View;
 
 	protected:
+		void onInit(const Screen &screen) override;
 		void onDraw(const Screen &screen) override;
 		bool onHandle() override;
 
