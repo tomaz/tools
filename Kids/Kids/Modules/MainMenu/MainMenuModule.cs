@@ -1,5 +1,5 @@
 ﻿using System;
-using Kids.Blocks;
+using Kids.Menu;
 using Kids.Common;
 using Kids.Modules;
 using Kids.Modules.Hangman;
@@ -13,7 +13,7 @@ namespace Kids.MainMenu {
 	/// </summary>
 	class MainMenuModule : BaseModule {
 
-		private MenuHandler _menu;
+		private readonly Menu.Menu _menu;
 
 		#region Initialization & Disposal
 
@@ -41,12 +41,13 @@ namespace Kids.MainMenu {
 
 		#region Setup
 
-		private MenuHandler CreateMenu() {
-			return new MenuHandler(View.ContentConsole)
+		private Menu.Menu CreateMenu() {
+			return new MenuBuilder(View.ContentConsole)
 				.SetPosition(10, 5)
 				.Add("Pretvorba enot", (IMenu menu) => { Push(new UnitConversionModule()); })
-				.Add("Vislice", (IMenu menu) => { Push(new HangmanModule());  })
-				.Add("Izhod", (IMenu menu) => { menu.Exit(); });
+				.Add("Besede", (IMenu menu) => { Push(new HangmanModule()); })
+				.Add("Izhod", (IMenu menu) => { menu.Exit(); })
+				.VerticalMenu();
 		}
 
 		#endregion

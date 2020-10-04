@@ -6,6 +6,43 @@ namespace Kids.Common {
 	static class KonsoleExtension {
 
 		/// <summary>
+		/// Opens a new box centered in the given <see cref="IConsole"/>.
+		/// </summary>
+		public static IConsole OpenBoxCentered(
+			this IConsole console,
+			string title,
+			int width,
+			int height,
+			BoxStyle? style = null) {
+
+			var parameters = new CenterParams() {
+				Title = title,
+				Width = width,
+				Height = height
+			};
+
+			return OpenBoxCentered(console, parameters, style);
+		}
+
+		/// <summary>
+		/// Opens a new box centered in the given <see cref="IConsole"/> by given offset.
+		/// </summary>
+		public static IConsole OpenBoxCentered(
+			this IConsole console,
+			CenterParams parameters,
+			BoxStyle? style = null) {
+
+			var x = (console.WindowWidth - parameters.Width) / 2 + parameters.DX;
+			var y = (console.WindowHeight - parameters.Height) / 2 + parameters.DY;
+
+			if (style != null) {
+				return console.OpenBox(parameters.Title, x, y, parameters.Width, parameters.Height, style);
+			} else {
+				return console.OpenBox(parameters.Title, x, y, parameters.Width, parameters.Height);
+			}
+		}
+
+		/// <summary>
 		/// Prints the given text on the given coordinates of the given <see cref="IConsole"/> and updates current cursor position.
 		/// </summary>
 		public static void Print(
@@ -93,5 +130,13 @@ namespace Kids.Common {
 				console.ForegroundColor = currentColor;
 			}
 		}
+	}
+
+	public class CenterParams {
+		public string Title { get; set; } = "";
+		public int DX { get; set; } = 0;
+		public int DY { get; set; } = 0;
+		public int Width { get; set; }
+		public int Height { get; set; }
 	}
 }

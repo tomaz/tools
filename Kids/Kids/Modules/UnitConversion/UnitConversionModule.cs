@@ -1,4 +1,4 @@
-﻿using Kids.Blocks;
+﻿using Kids.Menu;
 using Konsole;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ namespace Kids.Modules.UnitConversion {
 
 		private readonly List<Unit> _units;
 		private readonly List<string> _measures;
-		private readonly MenuHandler _menu;
+		private readonly Menu.Menu _menu;
 		private readonly IConsole _contentConsole;
 		private readonly IConsole _legendConsole;
 
@@ -23,6 +23,7 @@ namespace Kids.Modules.UnitConversion {
 		public UnitConversionModule() : base() {
 			_units = CreateUnits();
 			_measures = CreateMeasures();
+			_equation = new Equation(_measures, _units);
 
 			var splits = View.ContentConsole.SplitColumns(new Split(3), new Split(0), new Split(30), new Split(3));
 			_contentConsole = splits[1];
@@ -57,10 +58,10 @@ namespace Kids.Modules.UnitConversion {
 
 		#region Setup
 
-		private MenuHandler CreateMenu() {
-			return new MenuHandler(_contentConsole)
+		private Menu.Menu CreateMenu() {
+			return new MenuBuilder(_contentConsole)
 				.SetPosition(0, 1)
-				.Add(new MenuHandler.Item() {
+				.Add(new Menu.MenuItem() {
 					Title = "",
 					OnSelected = (IMenu menu) => { UpdateInputStatus(true); },
 					OnUnselected = (IMenu menu) => { UpdateInputStatus(false); },
@@ -77,9 +78,10 @@ namespace Kids.Modules.UnitConversion {
 					menu.SelectItem(0);
 					PrepareNextEquation();
 				})
-				.Add("Izhod", (IMenu menu) => { 
+				.Add("Izhod", (IMenu menu) => {
 					menu.Exit();
-				});
+				})
+				.VerticalMenu();
 		}
 
 		private List<Unit> CreateUnits() {
@@ -248,7 +250,7 @@ namespace Kids.Modules.UnitConversion {
 
 				case CursorPosition.Statistics:
 					View.ContentConsole.CursorLeft = _menu.Position.X + 8;
-					View.ContentConsole.CursorTop = _menu.Bottom + 3;
+					View.ContentConsole.CursorTop = _menu.BottomRight.Y + 3;
 					break;
 			}
 		}
