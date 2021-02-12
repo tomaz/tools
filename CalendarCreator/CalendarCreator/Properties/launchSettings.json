@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CalendarCreator": {
+      "commandName": "Project",
+      "commandLineArgs": "..\\..\\..\\..\\Sample\\events-f1.txt"
+    }
+  }
+}

@@ -1,31 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.29926.136
+VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CalendarCreator", "CalendarCreator\CalendarCreator.vcxproj", "{7F418851-E81C-4C3D-83D7-7FA00ABFC82F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarCreator", "CalendarCreator\CalendarCreator.csproj", "{CAAF5A19-A7AA-418D-96FD-D47C7C1B42A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7F418851-E81C-4C3D-83D7-7FA00ABFC82F}.Debug|x64.ActiveCfg = Debug|x64
-		{7F418851-E81C-4C3D-83D7-7FA00ABFC82F}.Debug|x64.Build.0 = Debug|x64
-		{7F418851-E81C-4C3D-83D7-7FA00ABFC82F}.Debug|x86.ActiveCfg = Debug|Win32
-		{7F418851-E81C-4C3D-83D7-7FA00ABFC82F}.Debug|x86.Build.0 = Debug|Win32
-		{7F418851-E81C-4C3D-83D7-7FA00ABFC82F}.Release|x64.ActiveCfg = Release|x64
-		{7F418851-E81C-4C3D-83D7-7FA00ABFC82F}.Release|x64.Build.0 = Release|x64
-		{7F418851-E81C-4C3D-83D7-7FA00ABFC82F}.Release|x86.ActiveCfg = Release|Win32
-		{7F418851-E81C-4C3D-83D7-7FA00ABFC82F}.Release|x86.Build.0 = Release|Win32
+		{CAAF5A19-A7AA-418D-96FD-D47C7C1B42A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAAF5A19-A7AA-418D-96FD-D47C7C1B42A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAAF5A19-A7AA-418D-96FD-D47C7C1B42A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAAF5A19-A7AA-418D-96FD-D47C7C1B42A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3092883B-0922-43F9-823B-1B25B58DD090}
+		SolutionGuid = {813E97E7-C537-4A16-87A6-FEEC73753323}
 	EndGlobalSection
 EndGlobal

@@ -21,7 +21,7 @@ Language: C#
 
 Takes a list of events in simple text format and converts it to `.ics` file suitable for importing into calendar app as series of events. Examples of source files are included in `Sample` folder.
 
-Language: C++ (will be converted to C# in the future)
+Language: C#
 
 ## Movies
 
